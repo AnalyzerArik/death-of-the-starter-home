@@ -1,0 +1,4 @@
+# Minimal notebook dependencies. Lock versions after validating the existing notebook.
+pandas>=2.2,<3
+matplotlib>=3.8,<4
+jupyterlab>=4,<5
