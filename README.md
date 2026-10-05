@@ -1,6 +1,10 @@
 # Death of the Starter House
 
-**Status: analysis in progress; repository foundation.** This project examines entry-level home-value trends. The title is a research question, not a finding.
+**Status: saved Kansas City exploration published; source-backed verification and peer comparisons pending.** This project examines entry-level home-value trends. The title is a research question, not a finding.
+
+The [analysis notebook](notebooks/01_zhvi_exploration.ipynb) preserves the completed local exploration and saved outputs. Selected Kansas City calculations were checked against the series embedded in its saved chart; the original CSV was unavailable for a full rerun. These are internally checked descriptive observations, not source-verified release findings. See [source provenance](docs/source_provenance.md) and the [analysis plan and completion status](docs/analysis_plan.md).
+
+The notebook's saved series places the lowest value during 2011–2014 in March 2012, not April 2013. April remains the exploratory reference date. Archived income and mortgage experiments are labeled separately and disabled by default; they do not change the version 1 question or establish affordability or causal findings.
 
 ## Research question
 
@@ -50,4 +54,4 @@ jupyter lab
 
 On Windows, activate with `.venv\Scripts\Activate.ps1` in PowerShell.
 
-Place the already downloaded data at `data/raw/zillow_bottom_tier_metro.csv`, record its provenance as described in `data/README.md`, and copy the existing notebook into `notebooks/01_zhvi_exploration.ipynb`. Neither the data nor the ongoing notebook is included in this foundation. Run notebooks from the repository root, and preserve original source values and missingness.
+Place the original downloaded snapshot at `data/raw/zillow/2026-10-01/zillow_bottom_tier_metro.csv`, matching the local notebook's recorded folder, or at `data/raw/zillow_bottom_tier_metro.csv`. The folder date does not verify the download date. Record provenance as described in [data/README.md](data/README.md), then open `notebooks/01_zhvi_exploration.ipynb`. Run from the repository root or `notebooks/`; preserve original source values and missingness. Raw data are excluded from Git. A current redownload is a new snapshot and must not be treated as verification of these saved outputs.

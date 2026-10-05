@@ -1,4 +1,9 @@
-# Minimal notebook dependencies. Lock versions after validating the existing notebook.
+# Notebook dependencies. These ranges are not a tested environment lock.
+# Original saved runtime: Python 3.12.4, pandas 2.2.2; other versions unknown.
 pandas>=2.2,<3
 matplotlib>=3.8,<4
 jupyterlab>=4,<5
+plotly>=5,<7
+# Used only by the disabled archived appendix:
+requests>=2.31,<3
+numpy>=1.26,<3
